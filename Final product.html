@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Angular (web framework)</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">        
+    </head>
+    <body>
+        <header>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page">Differences between Angular and AngularJS</a>
+            </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">History</a>
+                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Naming</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#Version 2">Version 2</a></li>
+                      <li><a class="dropdown-item" href="#Version 3">Version 3</a></li>
+                      <li><a class="dropdown-item" href="#Version 4">Version 4</a></li>
+                      <li><a class="dropdown-item" href="#Version 5">Version 5</a></li>
+                      <li><a class="dropdown-item" href="#Version 6">Version 6</a></li>
+                      <li><a class="dropdown-item" href="#Version 7">Version 7</a></li>
+                      <li><a class="dropdown-item" href="#Version 8">Version 8</a></li>
+                      <li><a class="dropdown-item" href="#Version 9">Version 9</a></li>
+                      <li><a class="dropdown-item" href="#Version 10">Version 10</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#Future releases">Future releases</a></li>
+                      <li><a class="dropdown-item" href="#Support">Support policy and schedule</a></li>
+                    </ul>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Libraries</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#Angular">Angular Material</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">History 1</a></li>
+                    </ul>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Video">Video Tutorial</a>
+                  </li>
+             </li>
+          </ul>
+        <main class="container-lg">
+            <div class="container">
+                <div class="row">
+                <div class="col-8">
+                <h1>Angular</h1>
+                <p class="fw-light"><em><strong>Angular</strong> (commonly referred to as "Angular 2+" or "Angular v2 and above") is a TypeScript-based open-source web application framework led by the Angular Team at <a href="http://google.com.">Google</a> and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.</em></p>
+                <h2>Differences between Angular and AngularJS</h2>
+                <hr>
+                <p>Google designed Angular as a ground-up rewrite of AngularJS.</p>
+                <ul>
+                  <li>Angular does not have a concept of "scope" or controllers, instead it uses a hierarchy of components as its primary architectural characteristic.</li>
+                  <li>Angular has a different expression syntax, focusing on <code>"[ ]"</code> for property binding, and <code>"( )"</code> for event binding</li>
+                  <li>Modularity – much core functionality has moved to modules</li>
+                  <li>Angular recommends the use of Microsoft's TypeScript language, which introduces the following features:</li>
+                  <ul>
+                    <li>Static typing, including Generics</li>
+                    <li>Annotations</li>
+                  </ul>
+                  <li>TypeScript is a superset of ECMAScript 6 (ES6), and is backwards compatible with ECMAScript 5 (i.e.: JavaScript).</li>
+                  <li>Dynamic loading</li>
+                  <li>Asynchronous template compilations</li>
+                  <li>Iterative callbacks provided by RxJS. RxJS limits state visibility and debugging, but these can be solved with reactive add-ons like ngrx or ngxs.</li>
+                  <li>Support for Angular Universal, which runs Angular applications on servers</li>
+                </ul>
+                <h2>History</h2>
+                <hr>
+                <h3 id="Naming">Naming</h3>
+                <p>Originally, the rewrite of AngularJS was called "Angular 2", but this led to confusion among developers. To clarify, the Team announced that separate terms should be used for each framework with "AngularJS" referring to the 1.X versions and "Angular" without the "JS" referring to versions 2 and up.</p>
+                <h3 id="Version 2">Version 2</h3>
+                <p>Angular 2.0 was announced at the ng-Europe conference 22–23. October 2014. The drastic changes in the 2.0 version created considerable controversy among developers. On April 30, 2015, the Angular developers announced that Angular 2 moved from Alpha to Developer Preview. Angular 2 moved to Beta in December 2015, and the first release candidate was published in May 2016. The final version was released on September 14, 2016.</p>
+                <h3 id="Version 4">Version 4</h3>
+                <p>On 13 December 2016 Angular 4 was announced, skipping 3 to avoid a confusion due to the misalignment of the router package's version which was already distributed as v3.3.0. The final version was released on March 23, 2017. Angular 4 is backward compatible with Angular 2.</p>
+                <p>Angular version 4.3 is a minor release, meaning that it contains no breaking changes and that it is a drop-in replacement for 4.x.x.</p>
+                <p>Features in version 4.3:</p>
+                <ul>
+                  <li>Introducing HttpClient, a smaller, easier to use, and more powerful library for making HTTP Requests.</li>
+                  <li>New router life cycle events for Guards and Resolvers. Four new events: GuardsCheckStart, GuardsCheckEnd, ResolveStart, ResolveEnd join the existing set of life cycle event such as NavigationStart.</li>
+                  <li>Conditionally disable animations.</li>
+                </ul>
+                <h3 id="Version 5">Version 5</h3>
+                <p>Angular 5 was released on November 1, 2017. Key improvements in Angular 5 include support for progressive web apps, a build optimizer and improvements related to Material Design.</p>
+                <h3 id="Version 6">Version 6</h3>
+                <p>Angular 6 was released on May 4, 2018. This is a major release focused less on the underlying framework, and more on the toolchain and on making it easier to move quickly with Angular in the future, like: ng update, ng add, Angular Elements, Angular Material + CDK Components, Angular Material Starter Components, CLI Workspaces, Library Support, Tree Shakable Providers, Animations Performance Improvements, and RxJS v6.</p>
+                <h3 id="Version 7">Version 7</h3>
+                <p>Angular 7 was released on October 18, 2018. Updates regarding Application Performance, Angular Material & CDK, Virtual Scrolling, Improved Accessibility of Selects, now supports Content Projection using web standard for custom elements, and dependency updates regarding Typescript 3.1, RxJS 6.3, Node 10 (still supporting Node 8).</p>
+                <h3 id="Version 8">Version 8</h3>
+                <p>Angular 8 was released on May 28, 2019. Featuring Differential loading for all application code, Dynamic imports for lazy routes, Web workers, TypeScript 3.4 support, and Angular Ivy as an opt-in preview. Angular Ivy opt-in preview includes:</p>
+                <ul>
+                  <li>Generated code that is easier to read and debug at runtime</li>
+                  <li>Faster re-build time</li>
+                  <li>Improved payload size</li>
+                  <li>Improved template type checking</li>
+                  <li>Backwards compatibility</li>
+                </ul>
+                <h3 id="Version 9">Version 9</h3>
+                <p>Angular 9 was released on February 6, 2020. Version 9 moves all applications to use the Ivy compiler and runtime by default. Angular has been updated to work with TypeScript 3.6 and 3.7. In addition to hundreds of bug fixes, the Ivy compiler and runtime offers numerous advantages:</p>
+                <ul>
+                  <li>Smaller bundle sizes</li>
+                  <li>Faster testing</li>
+                  <li>Better debugging</li>
+                  <li>Improved CSS class and style binding</li>
+                  <li>Improved type checking</li>
+                  <li>Improved build errors</li>
+                  <li>Improved build times, enabling AOT on by default</li>
+                  <li>Improved Internationalization</li>
+                </ul>
+                <h3 id="Version 10">Version 10</h3>
+                <p>Angular 10 was released on June 24, 2020.</p>
+                <ul>
+                <li>New Date Range Picker (Material UI library)</li>
+                <li>Warnings about CommonJS imports</li>
+                <li>Optional Stricter Settings</li>
+                <li>Keeping Up to Date with the Ecosystem</li>
+                <li>New Default Browser Configuration</li>
+                <li>Deprecations and Removals</li>
+                </ul>
+                <h3 id="Future releases">Future releases</h3>
+                <p>Since v9, the Angular team has moved all new applications to use the Ivy compiler and runtime. They will be working on Ivy to improve output bundle sizes and development speeds.</p>
+                <p>Each version is expected to be backward-compatible with the prior release. The Angular development team has pledged to do twice-a-year upgrades.</p>
+                <h3 id="Support">Support policy and schedule</h3>
+                <p>All the major releases are supported for 18 months. This consists of 6 months of active support, during which regularly-scheduled updates and patches are released. It is then followed by 12 months of long-term support (LTS), during which only critical fixes and security patches are released.</p>
+                <table class="table table-bordered">
+                  <caption>Table 1. Supported Angular Versions</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Version</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">First Released</th>
+                      <th scope="col">Active Ends</th>
+                      <th scope="col">LTS Ends</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">^10.0.0</td>
+                      <td>Active(LTS) </td>
+                      <td>Jun 24, 2020</td>
+                      <td>2020	Dec 24</td>
+                      <td>Dec 24, 2021</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">^9.0.0</td>
+                      <td>LTS</td>
+                      <td>Feb 6, 2020</td>
+                      <td>Aug 6, 2020</td>
+                      <td>Aug 6, 2021</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">^8.0.0</td>
+                      <td>LTS</td>
+                      <td>May 28, 2019</td>
+                      <td>Nov 28, 2019</td>
+                      <td>Nov 28, 2020</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h2>Libraries</h2>
+                <hr>
+                <h3 id="Angular">Angular material</h3>
+                <p><em>"Angular Material" redirects here. For the library of the same name for AngularJS 1.x, see AngularJS § Angular Material.</em></p>
+                <p>Angular Material is a UI component library that implements Material Design in Angular.</p>
+                <h2>Video Tutorial</h2>
+                <hr>
+                <p>Before you start working with <strong>Angular</strong>, it's worth watching an online tutorial about it. The tutorial was published on <a href="https://www.youtube.com/watch?v=k5E2AVpwsko&ab_channel=ProgrammingwithMosh">Youtube</a>.</p>
+                <div class="text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/k5E2AVpwsko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="Video"></iframe>
+                </div>
+                <h2>Credits</h2>
+                <hr>
+                <p>This homework was created by <mark>Aigars Mozumačs</mark> on <mark>13.10.2021</mark>.</p>
+                </div>
+                <div class="col-4">
+                  <div class="mt-4 border border-primary">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg" class="img-fluid"  alt="angular_logo">
+                  <dl class="row px-3 text-nowrap">
+                      <dt class="col-sm-5">Developer(s)</dt>
+                      <dd class="col-sm-7">Google</dd>
+                      
+                      <dt class="col-sm-5">Initial release</dt>
+                      <dd class="col-sm-7">2.0 / 14 September 2016</dd>
+                      
+                      <dt class="col-sm-5">Stable release</dt>
+                      <dd class="col-sm-7">10.1.5 / 7 October 2020</dd>
+                      
+                      <dt class="col-sm-5">Preview release</dt>
+                      <dd class="col-sm-7">11.0.0-next.5 / 7 October 2020</dd>
+                      
+                      <dt class="col-sm-5">Repository</dt>
+                      <dd class="col-sm-7"><a href="https://github.com/angular/angular">Angular Repository</a></dd>
+                      
+                      <dt class="col-sm-5">Written in</dt>
+                      <dd class="col-sm-7">TypeScript</dd>
+                      
+                      <dt class="col-sm-5">Platform</dt>
+                      <dd class="col-sm-7">Web platform</dd>
+                      
+                      <dt class="col-sm-5">Type</dt>
+                      <dd class="col-sm-7">Web framework</dd>
+                      
+                      <dt class="col-sm-5">License</dt>
+                      <dd class="col-sm-7">MIT License</dd>
+                      
+                      <dt class="col-sm-5">Website</dt>
+                      <dd class="col-sm-7"><a href="https://angular.io">angular.io</a></dd>
+                  </dl>
+                  </div>  
+                  </div>
+                  </div>   
+        </main>
+		<!-- JavaScript; do not delete! -->
+		<!-- Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+        
+</html>
